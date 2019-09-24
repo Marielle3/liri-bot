@@ -1,4 +1,2 @@
 # liri-bot
 
-client id cdd353185858448cbca7932d7e904173
-client secret 6e6b4d6a7d0c488eba2bcbcd2f092258
