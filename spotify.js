@@ -25,11 +25,11 @@ function spotifyThis(userInput){
 
   // Next, we append the text into the "random.txt" file to store all the song search
 // If the file didn't exist, then it gets created on the fly.
-fs.appendFile("random.txt", " now this", function(err) {
+fs.appendFile("random.txt", userInput, function(err) {
 
   // If an error was experienced we will log it.
-  if (err) {
-    console.log(err);
+  if (err) throw err; {
+    console.log("Another Song Saved");
   }
 
   // If no error is experienced, we'll log the phrase "Content Added" to our node console.
@@ -38,3 +38,4 @@ fs.appendFile("random.txt", " now this", function(err) {
   }
 
 });
+module.exports = spotifyThis
