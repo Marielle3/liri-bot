@@ -38,4 +38,3 @@ fs.appendFile("random.txt", userInput, function(err) {
   }
 
 });
-module.exports = spotifyThis

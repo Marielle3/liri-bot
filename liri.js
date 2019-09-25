@@ -19,4 +19,4 @@ if (process.argv[2] === "spotify-this-song"){
   var song = userInput
   spotifyThis();
 }
-module.exports = Spotify
+module.exports = spotifyThis
