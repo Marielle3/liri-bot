@@ -39,15 +39,6 @@ function spotifySong(parameter) {
     searchTrack = parameter;
   }
 
-  Spotify(spotifyThis, function(err, data) {
-    if (err) {
-        console.log('Something went wrong...');
-        console.dir(err);
-        return;
-    }
-    console.log(data);
-});
-
   spotify.search({
     type: 'track',
     query: searchSong
@@ -56,6 +47,7 @@ function spotifySong(parameter) {
       display('Error recorded: ' + error);
       return;
     } else {
+      console.log(data);
       console.log("\n---------------------------------------------------\n");
       console.log("Artist: " + data.tracks.items[0].artists[0].name);
       console.log("Song: " + data.tracks.items[0].name);
@@ -67,3 +59,4 @@ function spotifySong(parameter) {
   
   });
 };
+spotifySong();
