@@ -15,7 +15,7 @@ var parameter = process.argv.splice(3).join(' ');
 
 console.log('is this working?');
 
-function switchCase (){
+// function switchCase (){
   switch (command){
     case 'spotify-this-song':
     spotifySong(parameter);
@@ -25,7 +25,7 @@ function switchCase (){
     omdbInfo(parameter);
     break
   }
-};
+// };
 //SPOTIFY
 let spotifyThis = "Spotify"
 
@@ -36,7 +36,7 @@ function spotifySong(parameter) {
   if (!parameter) {
     searchSong = "Ace of Base The Sign";
   } else {
-    searchTrack = parameter;
+    searchSong = parameter;
   }
 
   spotify.search({
@@ -48,12 +48,12 @@ function spotifySong(parameter) {
       return;
     } else {
       console.log(data);
-      console.log("\n---------------------------------------------------\n");
-      console.log("Artist: " + data.tracks.items[0].artists[0].name);
-      console.log("Song: " + data.tracks.items[0].name);
-      console.log("Preview: " + data.tracks.items[3].preview_url);
-      console.log("Album: " + data.tracks.items[0].album.name);
-      console.log("\n---------------------------------------------------\n");
+      // console.log("\n---------------------------------------------------\n");
+      // console.log("Artist: " + data.tracks.items[0].artists[0].name);
+      // console.log("Song: " + data.tracks.items[0].name);
+      // console.log("Preview: " + data.tracks.items[3].preview_url);
+      // console.log("Album: " + data.tracks.items[0].album.name);
+      // console.log("\n---------------------------------------------------\n");
       
     }
   
